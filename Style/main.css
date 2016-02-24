@@ -156,6 +156,11 @@ body {
   background-color: #333;
 }
 
+.wraper {
+  max-width: 1104px;
+  margin: 0 auto;
+}
+
 .main_header {
   background-color: #000;
 }
@@ -215,10 +220,10 @@ body {
   background-image: url(../img/header_bg.png);
 }
 
-.wraper {
+.wraper_top {
   max-width: 1104px;
   margin: 0 auto;
-  height: 640px;
+  min-height: 640px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -263,8 +268,8 @@ body {
 }
 
 .header_button {
-  width: 131px;
-  height: 40px;
+  padding: 0 25px;
+  min-height: 40px;
   border: 2px solid white;
   background-color: transparent;
   color: #fff;
@@ -294,7 +299,7 @@ body {
   text-align: center;
   line-height: 2.5;
   background-color: #f5f5f5;
-  height: 54px;
+  min-height: 54px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -329,9 +334,170 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 0 0 5px 5px;
-  height: 54px;
+  min-height: 54px;
   background-color: #ff9b51;
   color: #fff;
   font-family: "OpenSans-Semibold";
   font-size: 15px;
+}
+
+.main_header_form-button:hover {
+  background-color: #ff8b38;
+}
+
+.main_body__top_social_line-bg {
+  background-color: #fff;
+  min-height: 105px;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.main_body__top_social_line {
+  min-height: 105px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main_body__top_social_line-text_block {
+  width: 35%;
+}
+
+.main_body__top_social_line-text_block h3 {
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-top: 20px;
+}
+
+.main_body__top_social_line-text_block p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  color: #86878b;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+.main_body__top_social_line-icon_block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.main_body__content_block_1-bg {
+  background-color: #fff;
+  min-height: 595px;
+}
+
+.main_body__content_block_1 {
+  min-height: 595px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_body__content_block_1-tabs {
+  width: 110px;
+}
+
+.main_body__content_block_1-tabs li {
+  height: 110px;
+  width: 110px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #333333;
+  border: 1px solid #c7c7c7;
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.main_body__content_block_1-tabs li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.main_body__content_block_1-tabs li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.main_body__content_block_1-tabs li a {
+  color: #fff;
+}
+
+.main_body__content_block_1-tabs .active_tab {
+  background-color: #ff8b38;
+}
+
+.main_body__content_block_1-text_block {
+  min-height: 333px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main_body__content_block_1-text_block h3 {
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.main_body__content_block_1-text_block p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  color: #86878b;
+  padding-top: 25px;
+}
+
+.main_body__content_block_1-text_block button {
+  height: 44px;
+  padding: 0 24px;
+  background-color: #ff8b38;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "OpenSans-Semibold";
+  font-size: 15px;
+  margin-top: 48px;
+}
+
+.main_body__content_block_1-img_block {
+  width: 320px;
 }
