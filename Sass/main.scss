@@ -70,6 +70,8 @@ a {
 	text-decoration: none;
 }
 
+
+
 /*-----------------------------------------------------------------------------------*/
 
 /* Sprite */
@@ -77,7 +79,7 @@ a {
 /*-----------------------------------------------------------------------------------*/
 
 .big_sprite {
-    background-image: url(/img/Sprite/sprite.png);
+    background-image: url(../img/Sprite/sprite.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -391,7 +393,7 @@ body{
 }
 
 .main_body__content_block_1-bg {
-	background-color: #fff;
+	background-color: #f5f5f5;
 	min-height: 595px;
 }
 
@@ -401,10 +403,7 @@ body{
 	flex-direction: row;
 	align-items: center;
 	&-tabs{
-		width: 110px;
 		& li{
-			height: 110px;
-			width: 110px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -420,6 +419,11 @@ body{
 			}	
 			& a{
 				color: #fff;
+				display: block;
+				height: 110px;
+				width: 110px;
+				text-align: center;
+				line-height: 8;
 			}
 		}
 		& .active_tab{
@@ -445,16 +449,205 @@ body{
 		& button{
 			height: 44px;
 			padding: 0 24px;
+			margin-top: 48px;
+			margin-bottom: 20px;
 			background-color: $deep-orange;
 			border: none;
 			border-radius: 4px;
 			color: #fff;
 			font-family: "OpenSans-Semibold";
 			font-size: 15px;
-			margin-top: 48px;
+			cursor: pointer;
 		}
 	}
 	&-img_block{
 		width: 320px;
+
 	}
+}
+.main_body__content_block_2-bg {
+	background-color: #fff;
+}
+.main_body__content_block_2 {
+	min-height: 596px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	&-img_block{
+		flex-grow: 1;
+		display: flex;
+		justify-content: flex-start;
+	}
+	&-text_block{
+		width: 40%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		&__top h3{
+			@include OpenSans20black;
+		}
+		&__top p{
+			@include OpenSansReg14;
+			margin-top: 55px;
+			margin-bottom: 42px;
+			position: relative;
+		}
+		&__top p:before{
+			content: "";
+			position: absolute;
+			top: -25px;
+			left: 0;
+			height: 2px;
+			width: 64px;
+			background-color: $orange;
+		}
+		&__bottom{
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 38px;
+		}
+		&__bottom-img{
+			margin-right: 25px;
+		}
+		&__bottom-articles h4{
+			font-family: "OpenSans-Semibold";
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
+		&__bottom-articles p{
+			@include OpenSansReg14;
+		}
+	}
+}
+
+
+.main_body__content_block_3 {
+	min-height: 596px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	&-text_block{
+		width: 43%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		& h3{
+			@include OpenSans20black;
+			margin-bottom: 25px;
+			position: relative;
+		}
+		& h3:after{
+			content: "";
+			position: absolute;
+			bottom: -25px;
+			left: 0;
+			height: 2px;
+			width: 64px;
+			background-color: $orange;
+		}
+		& p{
+			@include OpenSansReg14;
+			padding-top: 25px;
+		}
+	}
+	&-img_block{
+		flex-grow: 1;
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+
+.main_body__content_block_4-bg {
+	background-color: #fff;
+}
+
+.main_body__content_block_4 {
+	min-height: 591px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&-header h2{
+		font-family: 'Raleway-Regular', "OpenSans";
+		font-size: 36px;
+		color: #000;
+		line-height: 1.2;
+		position: relative;
+		margin-bottom: 60px;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -30px;
+			left: 42%;
+			height: 2px;
+			width: 64px;
+			background-color: $orange;
+		}
+	}
+
+	&-header p{
+		@include OpenSansReg14;
+		margin-bottom: 80px;
+	}
+	&-elem-list{
+		display: flex;
+		flex-direction: row;
+		& .img{
+			margin: 0 auto;
+			margin-bottom: 25px;
+		}
+		&-element{
+		margin: 0 16px;
+		& h3{
+			@include OpenSans20black;
+			text-align: center;
+			margin-bottom: 24px;
+		}
+
+		& p{
+			@include OpenSansReg14;
+			text-align: center;
+		}
+		}
+	}
+}
+
+.main_body__content_block_5-bg {
+	background-color: #f5f5f5;
+}
+.main_body__content_block_5 {
+	min-height: 883px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&-header h2{
+		font-family: 'Raleway-Regular', "OpenSans";
+		font-size: 36px;
+		color: #000;
+		line-height: 1.2;
+		position: relative;
+		margin-bottom: 60px;
+		text-align: center;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: -30px;
+			left: 42%;
+			height: 2px;
+			width: 64px;
+			background-color: $orange;
+		}
+	}
+
+	&-header p{
+		@include OpenSansReg14;
+		margin-bottom: 80px;
+	}
+	&-elem-list{
+		display: flex;
+		flex-direction: row;
+	}	
 }
