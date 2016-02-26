@@ -460,6 +460,9 @@ body{
 			font-family: "OpenSans-Semibold";
 			font-size: 15px;
 			cursor: pointer;
+			&:hover{
+				background-color: $orange;
+			}
 		}
 	}
 	&-img_block{
@@ -909,10 +912,11 @@ body{
 		text-align: center;
 	}
 	&-form button{
+			width: 160px;
 			height: 44px;
 			padding: 0 24px;
-			margin-top: 48px;
 			margin-bottom: 20px;
+			margin: 50px auto;
 			background-color: $deep-orange;
 			border: none;
 			border-radius: 4px;
@@ -920,7 +924,58 @@ body{
 			font-family: "OpenSans-Semibold";
 			font-size: 15px;
 			cursor: pointer;
+			box-shadow: 0px 1px 0px 0px  rgba(0,0,0,.16);
+			&:hover{
+				background-color: $orange;
+			}
+			
+	}
+	&-form{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	
+		&-input{
+			display: flex;
+			flex-direction: row;
+
+			&_left_block{
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+				flex-shrink: 1;
+				& input{
+					height: 33px;
+					width: auto;
+					border: none;
+					border-bottom: 1px solid #d6d6d6;
+					@include OpenSansReg14;
+					padding-top: 30px;
+					margin-right: 6%;
+					&:focus::-webkit-input-placeholder{
+						color: transparent;
+					}
+
+				}
+			}
+			&_right_block{
+				flex-grow: 1;
+				& textarea{
+					width: 100%;
+					border: none;
+					border-bottom: 1px solid #d6d6d6;
+					@include OpenSansReg14;
+					padding-top: 31px;
+					margin-left: 6%;
+					&:focus::-webkit-input-placeholder{
+						color: transparent;
+					}
+				}
+			}
+
 		}
+
+	}
 }	
 footer{
 	height: 83px;
@@ -938,6 +993,7 @@ footer{
 		font-size: 12px;
 	}
 }
+
 .footer__social_block{
 	width: 634px;
 	height: 30px;
