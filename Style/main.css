@@ -500,6 +500,10 @@ body {
   cursor: pointer;
 }
 
+.main_body__content_block_1-text_block button:hover {
+  background-color: #ff9b51;
+}
+
 .main_body__content_block_1-img_block {
   width: 320px;
 }
@@ -1164,10 +1168,11 @@ body {
 }
 
 .main_body__content_block_8-form button {
+  width: 160px;
   height: 44px;
   padding: 0 24px;
-  margin-top: 48px;
   margin-bottom: 20px;
+  margin: 50px auto;
   background-color: #ff8b38;
   border: none;
   border-radius: 4px;
@@ -1175,6 +1180,84 @@ body {
   font-family: "OpenSans-Semibold";
   font-size: 15px;
   cursor: pointer;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
+}
+
+.main_body__content_block_8-form button:hover {
+  background-color: #ff9b51;
+}
+
+.main_body__content_block_8-form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.main_body__content_block_8-form-input {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main_body__content_block_8-form-input_left_block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+}
+
+.main_body__content_block_8-form-input_left_block input {
+  height: 33px;
+  width: auto;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  color: #86878b;
+  padding-top: 30px;
+  margin-right: 6%;
+}
+
+.main_body__content_block_8-form-input_left_block input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.main_body__content_block_8-form-input_right_block {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main_body__content_block_8-form-input_right_block textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  color: #86878b;
+  padding-top: 31px;
+  margin-left: 6%;
+}
+
+.main_body__content_block_8-form-input_right_block textarea:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
 footer {
