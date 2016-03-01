@@ -148,6 +148,36 @@ a {
 /* VARIABLES */
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
+/* QUERIES */
+/*-----------------------------------------------------------------------------------*/
+@media (max-width: 1150px) {
+  .wraper_top {
+    padding: 0 20px;
+  }
+  .wraper {
+    padding: 0px 20px;
+  }
+  .main_body__top_social_line-icon_block img {
+    width: 85%;
+    padding-left: 50px;
+  }
+  .main_body__content_block_1-text_block {
+    padding-left: 40px;
+  }
+  .main_body__content_block_2-img_block img {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 845px) {
+  .main_body__content_block_6 {
+    display: block;
+    display: none;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
 /* MAIN */
 /*-----------------------------------------------------------------------------------*/
 body {
@@ -456,8 +486,8 @@ body {
 
 .main_body__content_block_1-text_block {
   min-height: 333px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 7%;
+  padding-right: 7%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1245,7 +1275,7 @@ body {
 }
 
 .main_body__content_block_8-form-input_right_block textarea {
-  width: 100%;
+  width: 90%;
   border: none;
   border-bottom: 1px solid #d6d6d6;
   font-family: "Open Sans";

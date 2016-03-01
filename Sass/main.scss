@@ -175,7 +175,12 @@ $deep_orange: #ff8b38;
 $gray: #333333;
 $lite-gray: #86878b;
 $black: #000;
+/*-----------------------------------------------------------------------------------*/
 
+/* QUERIES */
+
+/*-----------------------------------------------------------------------------------*/
+@import "queries.scss";
 /*-----------------------------------------------------------------------------------*/
 
 /* MAIN */
@@ -435,8 +440,8 @@ body{
 	&-text_block{
 		
 		min-height: 333px;
-		padding-left: 100px;
-		padding-right: 100px;
+		padding-left: 7%;
+		padding-right: 7%;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -961,7 +966,7 @@ body{
 			&_right_block{
 				flex-grow: 1;
 				& textarea{
-					width: 100%;
+					width: 90%;
 					border: none;
 					border-bottom: 1px solid #d6d6d6;
 					@include OpenSansReg14;

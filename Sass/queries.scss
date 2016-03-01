@@ -1,0 +1,25 @@
+@media (max-width: 1150px){
+	.wraper_top{
+		padding: 0 20px;
+	}
+	.wraper{
+	padding: 0px 20px;
+	}
+	.main_body__top_social_line-icon_block img{
+		width: 85%;
+		padding-left: 50px;
+	}
+	.main_body__content_block_1-text_block{
+		padding-left: 40px;
+	}
+	.main_body__content_block_2-img_block img{
+		width: 500px;
+		height: 350px;
+	}
+}
+@media (max-width: 845px){
+	.main_body__content_block_6 {
+		display: block;
+		display: none;
+	}
+}
