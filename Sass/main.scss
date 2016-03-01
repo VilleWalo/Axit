@@ -175,12 +175,7 @@ $deep_orange: #ff8b38;
 $gray: #333333;
 $lite-gray: #86878b;
 $black: #000;
-/*-----------------------------------------------------------------------------------*/
 
-/* QUERIES */
-
-/*-----------------------------------------------------------------------------------*/
-@import "queries.scss";
 /*-----------------------------------------------------------------------------------*/
 
 /* MAIN */
@@ -401,7 +396,6 @@ body{
 
 .main_body__content_block_1-bg {
 	background-color: #f5f5f5;
-	min-height: 595px;
 }
 
 .main_body__content_block_1 {
@@ -448,6 +442,7 @@ body{
 		& h3{
 			@include OpenSans20black;
 			margin-bottom: 25px;
+			padding-top: 15px;
 		}
 		& p{
 			@include OpenSansReg14;
@@ -496,6 +491,7 @@ body{
 
 		&__top h3{
 			@include OpenSans20black;
+			padding-top: 15px;
 		}
 		&__top p{
 			@include OpenSansReg14;
@@ -546,6 +542,7 @@ body{
 			@include OpenSans20black;
 			margin-bottom: 25px;
 			position: relative;
+			
 		}
 		& h3:after{
 			content: "";
@@ -601,6 +598,7 @@ body{
 	&-header p{
 		@include OpenSansReg14;
 		margin-bottom: 80px;
+		text-align: center;
 	}
 	&-elem-list{
 		display: flex;
@@ -846,9 +844,11 @@ body{
 .main_body__content_block_7-bg {
 	background-color: #111;
 	background-image: url(../img/footer_bg.png);
+	background-repeat: no-repeat;
+	padding: 20px 20px;
 }
 .main_body__content_block_7 {
-	min-height: 319px;
+	max-height: 319px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1007,3 +1007,10 @@ footer{
 	background-size: contain;
 	background-position-x: center;
 }
+
+/*-----------------------------------------------------------------------------------*/
+
+/* QUERIES */
+
+/*-----------------------------------------------------------------------------------*/
+@import "queries.scss";
