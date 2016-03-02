@@ -272,7 +272,6 @@ body{
 		font-size: 14px;
 		padding: 15px 30px;
 		background-color: #000;
-		width: 50%;
 
 	}
 	&:hover .main_header__navlist-burger-list a{
@@ -284,10 +283,10 @@ body{
 	}
 	&-list{
 		position: absolute;
-		left: -100px;
+		left: -110px;
 		top: 52px;
 		z-index: 10;
-		width: 300px;
+		width: 212px;
 	}
 	&:before{
 		content: "";
