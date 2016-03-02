@@ -138,6 +138,13 @@
 }	
 
 @media (max-width: 590px){
+	.main_header__navlist-burger {
+		display: block;
+	}
+
+	.main_header__navlist li a{
+		display: none;
+	}
 	.main_body__top_social_line-bg {
 		min-height: 60px;
 	}
