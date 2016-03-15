@@ -364,6 +364,10 @@ body{
 	font-family: "OpenSans-Semibold";
 	font-size: 15px;
 	cursor: pointer;
+	&:hover{
+		background-color: rgba(0,0,0,.25);
+		border: 2px solid #bbb;
+	}
 }
 
 .main_header__top_form-right_column {
@@ -715,7 +719,7 @@ body{
 			position: absolute;
 			bottom: -30px;
 			left: 50%;
-			transform: translate(-50%, 0);
+			transform: translateX(-50%);
 			height: 2px;
 			width: 64px;
 			background-color: $orange;

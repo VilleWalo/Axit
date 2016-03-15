@@ -372,6 +372,11 @@ body {
   cursor: pointer;
 }
 
+.header_button:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 2px solid #bbb;
+}
+
 .main_header__top_form-right_column {
   width: 52%;
   display: -webkit-flex;
@@ -885,9 +890,9 @@ body {
   position: absolute;
   bottom: -30px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   height: 2px;
   width: 64px;
   background-color: #ff9b51;
