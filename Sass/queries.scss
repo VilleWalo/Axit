@@ -8,9 +8,6 @@
 	.main_body__top_social_line{
 		padding: 5px 20px;
 	}
-	// .main_body__top_social_line-icon_block img{
-	// 	width: 85%;
-	// 	padding-left: 50px;
 	
 	.main_body__content_block_1-text_block{
 		padding-left: 40px;
@@ -184,6 +181,14 @@
 	}
 }	
 
+@media (max-width: 468px){
+	.main_body__top_social_line-icon_block{
+		& a{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	}
+}
 
 @media (max-width: 390px){
 	.main_body__content_block_1-tabs{
